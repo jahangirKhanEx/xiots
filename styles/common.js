@@ -10,7 +10,7 @@ export const FlexboxStyle = ({ align, justify, direction, gap }) => css`
 
 export const GridBoxStyle = ({ columns, align, gap }) => css`
   display: grid;
-  grid-template-columns: ${columns || "center"};
+  grid-template-columns: ${columns || "repeat(3, 1fr)"};
   align-items: ${align || "center"};
   grid-gap: ${gap || "1rem"};
 `;
